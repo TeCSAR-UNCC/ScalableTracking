@@ -1,0 +1,109 @@
+pkulkar7@tecsar-srv2:~/object_tracking$ python3 curate_dataset.py 
+The frames for  47.0  is  (567, 1, 54) (567, 1, 4)
+The frames for  1693.0  is  (524, 1, 54) (524, 1, 4)
+The frames for  731.0  is  (605, 1, 54) (605, 1, 4)
+The frames for  516.0  is  (584, 1, 54) (584, 1, 4)
+The frames for  698.0  is  (594, 1, 54) (594, 1, 4)
+pkulkar7@tecsar-srv2:~/object_tracking$ python3 curate_dataset.py 
+Traceback (most recent call last):
+  File "curate_dataset.py", line 89, in <module>
+    final =np.reshape(final,newshape=(final.shape[0],1,final.shape[1]))
+IndexError: tuple index out of range
+pkulkar7@tecsar-srv2:~/object_tracking$ python3 curate_dataset.py 
+Traceback (most recent call last):
+  File "curate_dataset.py", line 48, in <module>
+    op_dataframe=openpose_dataframe.groupby('frame').get_group(row_gt[2])
+  File "/home/pkulkar7/.local/lib/python3.5/site-packages/pandas/core/groupby/groupby.py", line 648, in get_group
+    raise KeyError(name)
+KeyError: 155183.0
+pkulkar7@tecsar-srv2:~/object_tracking$ python3 curate_dataset.py 
+Traceback (most recent call last):
+  File "curate_dataset.py", line 12, in <module>
+    f = h5py.File('../mat_files/detections/OpenPose/camera'+cam_id[0]+'.mat','r') 
+TypeError: 'float' object is not subscriptable
+pkulkar7@tecsar-srv2:~/object_tracking$ python3 curate_dataset.py 
+Traceback (most recent call last):
+  File "curate_dataset.py", line 12, in <module>
+    f = h5py.File('../mat_files/detections/OpenPose/camera'+str(cam_id[0])+'.mat','r') 
+TypeError: 'float' object is not subscriptable
+
+
+
+CAMERA 1:
+The frames for  18.0  is  (661, 1, 54) (661, 1, 4)
+The frames for  19.0  is  (750, 1, 54) (750, 1, 4)
+The frames for  20.0  is  (770, 1, 54) (770, 1, 4)
+The frames for  21.0  is  (726, 1, 54) (726, 1, 4)
+The frames for  30.0  is  (688, 1, 54) (688, 1, 4)
+The frames for  31.0  is  (771, 1, 54) (771, 1, 4)
+The frames for  600.0  is  (550, 1, 54) (550, 1, 4)
+The frames for  790.0  is  (627, 1, 54) (627, 1, 4)
+pkulkar7@tecsar-srv2:~/object_tracking$ 
+
+CAMERA 2:
+The frames for  18.0  is  (618, 1, 54) (618, 1, 4)
+The frames for  50.0  is  (779, 1, 54) (779, 1, 4)
+The frames for  51.0  is  (651, 1, 54) (651, 1, 4)
+The frames for  90.0  is  (651, 1, 54) (651, 1, 4)
+The frames for  109.0  is  (621, 1, 54) (621, 1, 4)
+The frames for  202.0  is  (523, 1, 54) (523, 1, 4)
+The frames for  740.0  is  (809, 1, 54) (809, 1, 4)
+The frames for  790.0  is  (665, 1, 54) (665, 1, 4)
+
+CAMERA 4:
+pkulkar7@tecsar-srv2:~/object_tracking$ python3 curate_dataset.py 
+The frames for  1749.0  is  (870, 1, 54) (870, 1, 4)
+The frames for  250.0  is  (1045, 1, 54) (1045, 1, 4)
+The frames for  371.0  is  (779, 1, 54) (779, 1, 4)
+The frames for  99.0  is  (1010, 1, 54) (1010, 1, 4)
+The frames for  1745.0  is  (905, 1, 54) (905, 1, 4)
+The frames for  595.0  is  (796, 1, 54) (796, 1, 4)
+The frames for  1636.0  is  (829, 1, 54) (829, 1, 4)
+The frames for  2044.0  is  (841, 1, 54) (841, 1, 4)
+
+
+CAMERA 5:
+pkulkar7@tecsar-srv2:~/object_tracking$ python3 curate_dataset.py 
+The frames for  189.0  is  (660, 1, 54) (660, 1, 4)
+The frames for  1766.0  is  (353, 1, 54) (353, 1, 4)
+The frames for  766.0  is  (43, 1, 54) (43, 1, 4)
+The frames for  590.0  is  (380, 1, 54) (380, 1, 4)
+The frames for  205.0  is  (639, 1, 54) (639, 1, 4)
+The frames for  98.0  is  (612, 1, 54) (612, 1, 4)
+The frames for  332.0  is  (678, 1, 54) (678, 1, 4)
+The frames for  1587.0  is  (120, 1, 54) (120, 1, 4)
+
+
+CAMERA 6:
+pkulkar7@tecsar-srv2:~/object_tracking$ python3 curate_dataset.py 
+The frames for  2471.0  is  (1059, 1, 54) (1059, 1, 4)
+The frames for  4494.0  is  (778, 1, 54) (778, 1, 4)
+The frames for  346.0  is  (883, 1, 54) (883, 1, 4)
+The frames for  4243.0  is  (806, 1, 54) (806, 1, 4)
+The frames for  29.0  is  (794, 1, 54) (794, 1, 4)
+The frames for  4550.0  is  (769, 1, 54) (769, 1, 4)
+The frames for  444.0  is  (870, 1, 54) (870, 1, 4)
+The frames for  343.0  is  (799, 1, 54) (799, 1, 4)
+
+CAMERA 7:
+pkulkar7@tecsar-srv2:~/object_tracking$ python3 curate_dataset.py 
+The frames for  63.0  is  (706, 1, 54) (706, 1, 4)
+The frames for  4096.0  is  (580, 1, 54) (580, 1, 4)
+The frames for  5333.0  is  (416, 1, 54) (416, 1, 4)
+The frames for  4431.0  is  (590, 1, 54) (590, 1, 4)
+The frames for  4107.0  is  (474, 1, 54) (474, 1, 4)
+The frames for  4640.0  is  (669, 1, 54) (669, 1, 4)
+The frames for  159.0  is  (230, 1, 54) (230, 1, 4)
+The frames for  4694.0  is  (584, 1, 54) (584, 1, 4)
+
+CAMERA 8:
+pkulkar7@tecsar-srv2:~/object_tracking$ python3 curate_dataset.py 
+The frames for  6070.0  is  (586, 1, 54) (586, 1, 4)
+The frames for  4075.0  is  (547, 1, 54) (547, 1, 4)
+The frames for  4563.0  is  (421, 1, 54) (421, 1, 4)
+The frames for  4177.0  is  (510, 1, 54) (510, 1, 4)
+The frames for  6402.0  is  (637, 1, 54) (637, 1, 4)
+The frames for  6611.0  is  (521, 1, 54) (521, 1, 4)
+The frames for  4406.0  is  (564, 1, 54) (564, 1, 4)
+The frames for  4356.0  is  (596, 1, 54) (596, 1, 4)
+
