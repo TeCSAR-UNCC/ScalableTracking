@@ -1,4 +1,5 @@
-cam_id = 3.0
+cam_id = 6.0
+which_split='testing'
 
 from scipy.io import loadmat
 from shapely.geometry import MultiPoint,box
@@ -31,9 +32,11 @@ tempframe =grouped.get_group(cam_id)#.groupby('ID').get_group(obj_id)
 
 import random
 a = tempframe['ID'].unique()
-#obj_ids = random.sample(list(a),8)
-obj_ids = [251.0]
+obj_ids = random.sample(list(a),1)
+
+#obj_ids = [3000.0]
 for obj_id in obj_ids:
+    print(obj_id)
     gt_dataframe=grouped.get_group(cam_id).groupby('ID').get_group(obj_id)
 
 
@@ -97,6 +100,9 @@ for obj_id in obj_ids:
 
     # In[42]:
 
-
-    np.save('duke_dataset/training/'+'cam'+str(cam_id)[:-2]+'obj'+str(obj_id)[:-2],final)
-    np.save('duke_dataset/training/'+'cam'+str(cam_id)[:-2]+'obj'+str(obj_id)[:-2]+'_gt',final_gt)
+    if which_split=='training':
+        np.save('duke_dataset/training/'+'cam'+str(cam_id)[:-2]+'obj'+str(obj_id)[:-2],final)
+        np.save('duke_dataset/training/'+'cam'+str(cam_id)[:-2]+'obj'+str(obj_id)[:-2]+'_gt',final_gt)
+    elif which_split=='testing':
+        np.save('duke_dataset/testing/'+'cam'+str(cam_id)[:-2]+'obj'+str(obj_id)[:-2],final)
+        np.save('duke_dataset/testing/'+'cam'+str(cam_id)[:-2]+'obj'+str(obj_id)[:-2]+'_gt',final_gt)
